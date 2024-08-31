@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/64bf242837.js" crossorigin="anonymous"></script>
+
+    <!-- google font Latto -->
+</head>
+<body>
+    <!-- banner -->
+     <div class="banner">
+        <!-- navbar -->
+        <header>
+            <div class="logo">
+                <h2>Trave<span class="logo-span">lo.</span></h2>
+            </div>
+        
+            <nav>
+                <ul class="navlist">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Contact Us<li>
+                    <a href="#"><button class="btn">Login/Signup</button></a>
+                </ul>    
+            </nav>
+           <!-- menubar -->
+            <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        </header>    
+            <!-- dropdown -->
+             <div class="dropdown-menu open">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Packages</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact Us<li>
+               <li> <a href="#" class="dropdown-btn">Login/Signup</a></li>
+             </div>
+        
+       
+     </div>
+
+
+     <script>
+         const toggleBtn = document.querySelector('.menu-icon');
+         const toggleBtnIcon = document.querySelector('.menu-icon i');
+         const dropdownMenu = document.querySelector('.dropdown-menu');
+
+         toggleBtn.onclick = function(){
+            dropdownMenu.classList.toggle('open')
+         }
+     </script>
+    
+</body>
+</html>
